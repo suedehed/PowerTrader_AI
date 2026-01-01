@@ -83,6 +83,21 @@ This is the only thing you need to run day-to-day.
 
 ---
 
+## Optional — Build a Windows EXE (Option A)
+
+If you want a single Windows executable (bundled Python runtime), run:
+
+1. Open **PowerShell** in your PowerTrader AI folder.
+2. Execute:
+
+   `.\build_windows_exe.ps1`
+
+When it finishes, the EXE will be at:
+
+`dist\PowerTraderAI.exe`
+
+---
+
 ## Step 5 — Set your folder, coins, and Robinhood keys (inside the Hub)
 
 ### Open Settings
