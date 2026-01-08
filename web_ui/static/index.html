@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PowerTrader AI Web Hub</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <div>
+          <h1>PowerTrader AI Web Hub</h1>
+          <p>Local web interface for starting, stopping, and monitoring the trading services.</p>
+        </div>
+        <div class="app__actions">
+          <button id="startBtn" class="btn btn--primary">Start All</button>
+          <button id="stopBtn" class="btn">Stop All</button>
+        </div>
+      </header>
+
+      <section class="status">
+        <div class="card">
+          <h2>Status</h2>
+          <div class="status__grid">
+            <div>
+              <h3>Neural Runner</h3>
+              <p id="runnerState">—</p>
+            </div>
+            <div>
+              <h3>Trader</h3>
+              <p id="traderState">—</p>
+            </div>
+            <div>
+              <h3>Runner Ready</h3>
+              <p id="readyState">—</p>
+            </div>
+            <div>
+              <h3>Auto-start</h3>
+              <p id="autoState">—</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logs">
+        <div class="card">
+          <h2>Runner Logs</h2>
+          <pre id="runnerLogs" class="log"></pre>
+        </div>
+        <div class="card">
+          <h2>Trader Logs</h2>
+          <pre id="traderLogs" class="log"></pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
